@@ -1,4 +1,7 @@
 #include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 int main() {
 
@@ -8,7 +11,9 @@ int main() {
     if (fd < 0) {
         perror("feil ved skriving av filen"); exit(1);
     }
-    sz = write(fd, "Hello\0", 6);
-
+    	sz = write(fd, "Hello\0", 6);
+	sz = write(fd, "Hello\0", 6);
+	sz = write(fd, "Hello\0", 6);
+	sz = write(fd, "Hello\0", 6);
     close(fd);
 }
